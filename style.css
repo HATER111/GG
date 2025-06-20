@@ -1,0 +1,362 @@
+/* Основные стили */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #000;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+/* Навигация */
+.navbar {
+    padding: 1.5rem 0;
+    background-color: #000 !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    color: #fff !important;
+    padding: 0.5rem 1.5rem !important;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: #ccc !important;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.order-btn {
+    background-color: #000;
+    color: #fff !important;
+    border: 1px solid #fff;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.order-btn:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+/* Главная секция */
+.hero-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    min-height: 100vh;
+    background: url('../images/bg-main.jpg') no-repeat center center;
+    background-size: cover;
+    color: #000;
+}
+
+.main-title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 80%;
+}
+
+.order-btn-lg {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.order-btn-lg:hover {
+    background-color: #333;
+}
+
+.palinda-logo {
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 0.8;
+    color: #000;
+}
+
+.palinda-logo span {
+    opacity: 0;
+}
+
+/* Секции */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #000;
+}
+
+.about-section, .contacts-section {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+/* Галерея моделей */
+.models-section {
+    padding: 5rem 0;
+    background-color: #f1f1f1;
+}
+
+.model-img {
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.model-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Модальные окна */
+.modal-content {
+    border-radius: 0;
+    border: none;
+    padding: 2rem;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    background-color: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+/* Страницы Весна/Осень */
+.content-section {
+    padding: 120px 0 60px;
+    color: #000;
+    flex: 1;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.content-block {
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.content-block h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.content-block p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-block {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+}
+
+.highlight-block h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.highlight-block h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul li:before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
+.palinda-info {
+    margin-top: 3rem;
+}
+
+.palinda-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.palinda-info ul li:before {
+    content: none;
+}
+
+.models-gallery {
+    margin-top: 3rem;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 4rem;
+    }
+    
+    .palinda-logo {
+        font-size: 6rem;
+    }
+    
+    .navbar-brand {
+        margin-left: 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+    
+    .nav-link {
+        padding: 0.5rem !important;
+    }
+    
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .palinda-logo {
+        font-size: 4rem;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .order-btn-lg, .submit-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .palinda-logo {
+        font-size: 3rem;
+    }
+    
+    .modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section {
+        padding-top: 120px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .content-block h2 {
+        font-size: 1.5rem;
+    }
+}
